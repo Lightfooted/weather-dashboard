@@ -25,4 +25,13 @@ const api = {
 
     let city = document.getElementById('city');
     city.innerHTML = `${data.name}, ${data.sys.country}`;
+
+    let temperature = document.getElementById('temp');
+    temperature.innerHTML = `Temp: ${Math.round(data.main.temp)}°C`;
+
+    let minMax = document.getElementById('min-max');
+    minMax.innerHTML = `${Math.round(data.main.temp_min)}°C (Min) - ${Math.round(data.main.temp_max)}°C (Max)`;
+
+    let windSpeed = document.getElementById('wind');
+    windSpeed.innerHTML = `Wind: ${(data.wind.speed)} MPH`;
   }
