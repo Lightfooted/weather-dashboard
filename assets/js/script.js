@@ -18,4 +18,11 @@ const api = {
       .then((data) => {
         return data.json();
       })
+      .then(showWeather);
+  }
+
+  function showWeather(data) {
+
+    let city = document.getElementById('city');
+    city.innerHTML = `${data.name}, ${data.sys.country}`;
   }
