@@ -1,0 +1,27 @@
+body{
+  background-color: midnightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .search {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .weather-show {
+    background-color: white;
+    display: none;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    width: 25%;
+    height: 50%;
+    border-radius: 45px;
+  }
