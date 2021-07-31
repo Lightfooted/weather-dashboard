@@ -34,4 +34,10 @@ const api = {
 
     let windSpeed = document.getElementById('wind');
     windSpeed.innerHTML = `Wind: ${(data.wind.speed)} MPH`;
+
+    let humid = document.getElementById('humidity');
+    humid.innerHTML = `Humidity: ${(data.main.humidity)}%`;
+
+    let weather = document.getElementById('weather');
+    weather.innerHTML = `Sky: ${data.weather[0].description}`; //Need to figure out UV index
   }
