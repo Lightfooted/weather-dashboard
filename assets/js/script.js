@@ -1,3 +1,6 @@
+var displayDay = moment().format('LL');
+$("#displayDay").append(displayDay);
+
 const api = {
   key: '12b15af04b190776a75f0b8edb5f30b8',
   site: 'https://api.openweathermap.org/data/2.5/weather?',
